@@ -1,0 +1,136 @@
+#order {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 1rem;
+  background-image: url(../../../assets/stars.png);
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#order h1 {
+  color: whitesmoke;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 440px;
+  height: 620px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+.form-content h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.container {
+  padding: 10px;
+  height: 50px;
+}
+.dropDown {
+  margin: 0 5px;
+}
+.form {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.form input {
+  width: 100%;
+  height: 100%;
+  color: blue;
+  border: none;
+  outline: none;
+  padding-top: 20px;
+}
+.form label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+  font-size: 21px;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid green;
+  left: 0;
+  bottom: -1px;
+  transform: translateX(-120%);
+  transition: transform 0.3s ease;
+}
+.content {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label .content,
+.form input:valid + .label .content {
+  transform: translateY(-120%);
+  font-size: 16px;
+  color: green;
+}
+.form input:focus + .label::after,
+.form input:valid + .label::after {
+  transform: translateX(0);
+}
+.form-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#label-notes {
+  padding: 5px 5px;
+  font-size: 18px;
+}
+#notes {
+  resize: none;
+  margin: 0 5px;
+}
+#submit {
+  cursor: pointer;
+  width: 100px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: orbit;
+}
+@media (max-width: 426px) {
+  .form-content {
+    width: 300px;
+  }
+  .form-content h3 {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 321px) {
+  .form-content {
+    width: 250px;
+  }
+  .form-content h3 {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  #order {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #order {
+    font-size: 2rem;
+  }
+}

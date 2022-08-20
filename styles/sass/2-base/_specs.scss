@@ -1,0 +1,71 @@
+#specs {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0;
+  background-image: url(../../../assets/stars.png);
+  display: flex;
+  flex-flow: column wrap;
+}
+.specBtn {
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: white;
+  border: 3px solid black;
+  background: #032441fd;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20ch;
+  height: 50px;
+  font-family: orbit;
+}
+#table {
+  width: 100%;
+  display: none;
+  color: rgb(250, 236, 218, 0.85);
+}
+table,
+td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+td {
+  font-size: 1.4rem;
+}
+.trueHeader {
+  text-align: left;
+  font-size: 1.8rem;
+  width: 30%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+th,
+.trueHeader {
+  background-color: #09131b;
+}
+@media (min-width: 768px) {
+  .trueHeader {
+    font-size: 1.5rem;
+    width: 40%;
+  }
+  td {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 426px) {
+  .specs {
+    height: 200vh;
+  }
+  .trueHeader {
+    font-size: 1.25rem;
+    width: 50%;
+  }
+  td {
+    font-size: 1rem;
+  }
+}

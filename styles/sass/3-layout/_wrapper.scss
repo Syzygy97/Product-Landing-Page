@@ -1,0 +1,9 @@
+.wrapper {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 100px;
+  background-color: #091722;
+  scroll-behavior: smooth;
+  font-family: orbit;
+}

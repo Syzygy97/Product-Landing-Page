@@ -1,0 +1,16 @@
+@font-face {
+  font-family: orbit;
+  src: url(../../../Fonts/Orbitron/static/Orbitron-SemiBold.ttf);
+}
+
+html {
+  overflow: hidden;
+  font-family: orbit;
+}
+body {
+  background: white;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: orbit;
+}
